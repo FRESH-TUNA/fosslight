@@ -1098,7 +1098,11 @@ public class OssController extends CoTopComponent{
 				if (result.get("resCd").equals("10")) {
 					Map<String, String> ossNameMap = new HashMap<>();
 					ossNameMap.put("ossName", oss.getOssName());
+					ossNameMap.put("id", String.valueOf(1));
+					ossNameMap.put("status", "success");
+					ossNameMap.put("gridId", oss.getGridId());
 					ossNameMapList.add(ossNameMap);
+
 				}
 			}
 		}
